@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriOne – Intelligent Digital Agriculture Platform | Silent Coders Presentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Presentation HUD Bar -->
+  <header class="hud-header">
+    <div class="hud-left">
+      <div class="brand-pill">
+        <span class="pulse-dot"></span>
+        <span class="brand-name">AgriOne</span>
+        <span class="brand-sep">|</span>
+        <span class="team-tag">SILENT CODERS</span>
+      </div>
+      <div class="category-indicator" id="categoryIndicator">TEAM INTRODUCTION</div>
+    </div>
+    
+    <div class="hud-center">
+      <span class="slide-counter" id="slideCounter">Slide 1 / 36</span>
+    </div>
+
+    <div class="hud-right">
+      <div class="timer-badge" id="timerBadge" title="Click to reset presentation timer">
+        ⏱️ <span id="timerText">00:00</span>
+      </div>
+      <a href="AgriOne_Silent_Coders_Presentation.pptx" download class="btn-hud" title="Download PPTX File">
+        📥 <span>Download PPTX</span>
+      </a>
+      <button class="btn-hud" id="btnOverview" title="Slide Overview Grid (Key: O)">
+        🗂️ <span>Overview</span>
+      </button>
+      <button class="btn-hud" id="btnNotes" title="Speaker Notes (Key: N)">
+        📝 <span>Notes</span>
+      </button>
+      <button class="btn-hud" id="btnFullscreen" title="Toggle Fullscreen (Key: F)">
+        ⛶ <span>Fullscreen</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Progress Bar -->
+  <div class="progress-track">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Main Presentation Slides Container -->
+  <main class="presentation-stage" id="presentationStage">
+
+    <!-- SLIDE 1: TEAM INTRODUCTION -->
+    <section class="slide active" data-slide="1" data-category="TEAM INTRODUCTION">
+      <div class="slide-content s1-layout">
+        <div class="s1-left">
+          <div class="badge-accent">COLLEGE / HACKATHON PROJECT PRESENTATION</div>
+          <h1 class="hero-team-title">SILENT CODERS</h1>
+          <h2 class="hero-project-sub">AgriOne <span class="sub-sep">–</span> <span class="hero-highlight">Intelligent Digital Agriculture Platform</span></h2>
+          <p class="hero-desc">AI-powered ecosystem providing real-time intelligence, automated rule validation, and actionable decision support for modern agriculture.</p>
+          
+          <div class="leader-card">
+            <div class="leader-badge-pill">★ TEAM LEADER</div>
+            <div class="leader-info">
+              <div class="leader-avatar">👨‍💻</div>
+              <div>
+                <h3 class="leader-name">Iyaan Nagari</h3>
+                <p class="leader-role">Team Lead • System Architecture & Project Direction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="s1-right">
+          <div class="logo-frame">
+            <img src="assets/silent_coders_logo.jpg" alt="Silent Coders Team Logo" class="team-logo-img">
+          </div>
+        </div>
+
+        <div class="s1-members-row">
+          <div class="member-card">
+            <div class="member-icon">👤</div>
+            <div class="member-tag">TEAM MEMBER 01</div>
+            <h4 class="member-name">Bhuvan Kadakabhavi</h4>
+            <p class="member-sub">Silent Coders Team</p>
+          </div>
+          <div class="member-card">
+            <div class="member-icon">👤</div>
+            <div class="member-tag">TEAM MEMBER 02</div>
+            <h4 class="member-name">Jafar Momin</h4>
+            <p class="member-sub">Silent Coders Team</p>
+          </div>
+          <div class="member-card">
+            <div class="member-icon">👤</div>
+            <div class="member-tag">TEAM MEMBER 03</div>
+            <h4 class="member-name">Aiman Nadaf</h4>
+            <p class="member-sub">Silent Coders Team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: PROJECT INTRODUCTION -->
+    <section class="slide" data-slide="2" data-category="PROJECT INTRODUCTION">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">PROJECT INTRODUCTION</div>
+          <h1 class="slide-title">AgriOne</h1>
+          <h3 class="slide-subtitle">Intelligent Digital Agriculture Platform</h3>
+          <div class="tagline-banner">
+            “AI-Powered Intelligence for Smarter Farming.”
+          </div>
+          <p class="slide-body">
+            AgriOne is an intelligent digital agriculture platform that connects farmers with AI, real-time agricultural intelligence, crop health analysis, weather patterns, soil dynamics, market information, and farm management tools through <strong>one unified ecosystem</strong>.
+          </p>
+          <div class="chain-box">
+            <div class="chain-title">CORE VALUE PIPELINE</div>
+            <div class="chain-steps">
+              <div class="chain-node">Farmer</div>
+              <div class="chain-arrow">➔</div>
+              <div class="chain-node">Data</div>
+              <div class="chain-arrow">➔</div>
+              <div class="chain-node highlight">AI + Rule Engine</div>
+              <div class="chain-arrow">➔</div>
+              <div class="chain-node">Insights</div>
+              <div class="chain-arrow">➔</div>
+              <div class="chain-node action">Better Decisions</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="hero-image-card">
+            <img src="assets/agrione_hero.jpg" alt="Smart Farming Visual" class="slide-hero-img">
+            <div class="img-overlay-caption">AgriOne Connected Farm HUD & Neural Sensor Field</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: THE PROBLEM -->
+    <section class="slide" data-slide="3" data-category="PROBLEM STATEMENT">
+      <div class="slide-content">
+        <div class="badge-accent red">THE CHALLENGE</div>
+        <h1 class="slide-title">Problems Faced by Modern Farmers</h1>
+        <p class="slide-sub-lead">Modern agriculture suffers from fragmented information, climatic uncertainty, and opaque market structures.</p>
+        
+        <div class="grid-5x2">
+          <div class="problem-card">
+            <div class="prob-num">01</div>
+            <h4>Unpredictable Weather</h4>
+            <p>Sudden climate shifts and flash rains damage unharvested crops without local micro-warnings.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">02</div>
+            <h4>Disease Diagnosis</h4>
+            <p>Delayed pest identification leads to rampant crop loss and inappropriate pesticide application.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">03</div>
+            <h4>Improper Irrigation</h4>
+            <p>Over- or under-watering wastes scarce borewell water and leads to severe root rot.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">04</div>
+            <h4>Soil Health Uncertainty</h4>
+            <p>Lack of accessible testing leaves farmers unaware of critical N-P-K nutrient deficiencies.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">05</div>
+            <h4>Fragmented Data</h4>
+            <p>Vital information is scattered across TV bulletins, isolated apps, and hearsay.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">06</div>
+            <h4>Mandi Price Opacity</h4>
+            <p>Middlemen exploit the lack of real-time market transparency, suppressing farmers' profits.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">07</div>
+            <h4>Supply Chain Bottlenecks</h4>
+            <p>Inadequate transit and storage cause perishable produce to spoil before reaching buyers.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">08</div>
+            <h4>Limited Expert Access</h4>
+            <p>Agricultural extension officers are overburdened and miles away from remote rural farms.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">09</div>
+            <h4>Language Barriers</h4>
+            <p>Complex English software excludes millions of regional-language farming households.</p>
+          </div>
+          <div class="problem-card">
+            <div class="prob-num">10</div>
+            <h4>Manual Farm Records</h4>
+            <p>Paper tracking causes forgotten spray schedules, lost expenses, and zero audit trails.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: OUR SOLUTION -->
+    <section class="slide" data-slide="4" data-category="OUR SOLUTION">
+      <div class="slide-content">
+        <div class="badge-accent">UNIFIED INTELLIGENCE</div>
+        <h1 class="slide-title">What is AgriOne?</h1>
+        <p class="slide-sub-lead">AgriOne brings multiple agricultural services into one intelligent, unified platform.</p>
+
+        <div class="philosophy-banner">
+          <span class="phi-label">CORE PHILOSOPHY:</span>
+          <span class="phi-text">“AI interprets ➔ Rule Engine validates & calculates ➔ AgriOne provides actionable decisions”</span>
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-pillar cyan">
+            <div class="pillar-step">STAGE 01</div>
+            <h3>AI Interprets</h3>
+            <ul class="clean-list">
+              <li>Natural language understanding of farmer voice & text queries</li>
+              <li>Computer vision detection of crop disease lesions from photos</li>
+              <li>Context extraction (crop variety, location, soil context)</li>
+              <li>Understands local colloquialisms and intent</li>
+            </ul>
+          </div>
+          <div class="card-pillar emerald">
+            <div class="pillar-step">STAGE 02</div>
+            <h3>Rule Engine Validates</h3>
+            <ul class="clean-list">
+              <li>Mathematical agronomy equations & moisture models</li>
+              <li>Validation against government chemical toxicity limits</li>
+              <li>Exact N-P-K fertilizer calculation per acre</li>
+              <li>Guarantees 100% scientific safety and precision</li>
+            </ul>
+          </div>
+          <div class="card-pillar lime">
+            <div class="pillar-step">STAGE 03</div>
+            <h3>Actionable Decisions</h3>
+            <ul class="clean-list">
+              <li>Clear operational tasks delivered directly to farmer</li>
+              <li>Precision irrigation timers (e.g. 45 min at 06:00 AM)</li>
+              <li>Targeted pesticide dosage per 15L backpack pump</li>
+              <li>Optimal Mandi market selling timing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: COMPLETE AGRIONE ECOSYSTEM -->
+    <section class="slide" data-slide="5" data-category="ECOSYSTEM">
+      <div class="slide-content">
+        <div class="badge-accent">COMPLETE ECOSYSTEM</div>
+        <h1 class="slide-title">Complete AgriOne Ecosystem</h1>
+        <p class="slide-sub-lead">A central intelligence platform connected to 18 specialized agricultural modules.</p>
+
+        <div class="grid-ecosystem">
+          <div class="eco-badge"><span>🤖</span> AI Farmer Assistant</div>
+          <div class="eco-badge"><span>🔬</span> Crop Health & Disease</div>
+          <div class="eco-badge"><span>💧</span> Smart Irrigation</div>
+          <div class="eco-badge"><span>⛅</span> Weather Intelligence</div>
+          <div class="eco-badge"><span>🌱</span> Crop Intelligence</div>
+          <div class="eco-badge"><span>🧪</span> Soil Health</div>
+          <div class="eco-badge"><span>🌾</span> Crop Recommendation</div>
+          <div class="eco-badge"><span>📊</span> Mandi / Market Prices</div>
+          <div class="eco-badge"><span>📋</span> Farm Management</div>
+          <div class="eco-badge"><span>🚚</span> Supply Chain</div>
+          <div class="eco-badge"><span>🛒</span> Marketplace</div>
+          <div class="eco-badge"><span>🐄</span> Livestock & Dairy</div>
+          <div class="eco-badge"><span>🛰️</span> Satellite & Drone Intel</div>
+          <div class="eco-badge"><span>🌍</span> Sustainable Farming</div>
+          <div class="eco-badge"><span>💳</span> Finance & Insurance</div>
+          <div class="eco-badge"><span>📈</span> Analytics & Insights</div>
+          <div class="eco-badge"><span>🎙️</span> AI Voice Interaction</div>
+          <div class="eco-badge"><span>🌐</span> Multilingual Platform</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: FARMER DASHBOARD -->
+    <section class="slide" data-slide="6" data-category="FARMER DASHBOARD">
+      <div class="slide-content">
+        <div class="badge-accent">COMMAND CENTER</div>
+        <h1 class="slide-title">Personalized Farm Command Center</h1>
+        <p class="slide-sub-lead">Real-time telemetry and operation overview configured specifically for the farmer's land.</p>
+
+        <div class="dashboard-grid">
+          <div class="dash-card">
+            <div class="dc-header"><span>📍</span> Location & Area</div>
+            <div class="dc-value">Dharwad, Karnataka</div>
+            <div class="dc-sub">4.8 Hectares • 3 Active Plots</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>🌾</span> Current Crop Profile</div>
+            <div class="dc-value">Soybean (JS-335)</div>
+            <div class="dc-sub">Vegetative Stage (Day 42)</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>🧪</span> Soil Profile</div>
+            <div class="dc-value">Medium Black Soil</div>
+            <div class="dc-sub">pH: 7.2 • Moisture: 44% (Optimal)</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>💧</span> Irrigation Status</div>
+            <div class="dc-value">Next: 06:00 AM Tomorrow</div>
+            <div class="dc-sub">12,000 Liters via Drip Line A</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>⛅</span> Weather Telemetry</div>
+            <div class="dc-value">29°C • Clear Sky</div>
+            <div class="dc-sub">Rain Risk: 10% • Humidity: 62%</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>🔬</span> Crop Health Index</div>
+            <div class="dc-value">94% Healthy</div>
+            <div class="dc-sub">No Active High-Risk Outbreak</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>📋</span> Farm Activities</div>
+            <div class="dc-value">2 Tasks Pending</div>
+            <div class="dc-sub">Foliar spray scheduled today</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-header"><span>🚜</span> Equipment Status</div>
+            <div class="dc-value">Boom Sprayer Ready</div>
+            <div class="dc-sub">Tractor maintenance due in 50 hrs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: SMART LOCATION & FARM SETUP -->
+    <section class="slide" data-slide="7" data-category="LOCATION AWARENESS">
+      <div class="slide-content">
+        <div class="badge-accent">GEOSPATIAL INTELLIGENCE</div>
+        <h1 class="slide-title">Location-Aware Agriculture</h1>
+        <p class="slide-sub-lead">Every recommendation is geo-referenced to the specific micro-climate of the farmer's plot.</p>
+
+        <div class="flow-badge-strip">
+          Location ➔ Farm ➔ Weather ➔ Crop ➔ Recommendation
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🗺️</div>
+            <h3>1. Farmer Selects Location</h3>
+            <p>Village/city search, GPS auto-detect, and interactive satellite boundary polygon drawing.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛰️</div>
+            <h3>2. Micro-Zone Telemetry</h3>
+            <p>Retrieves agro-climatic zone parameters, elevation, historical monsoons, and local soil series.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🎯</div>
+            <h3>3. Tailored Recommendations</h3>
+            <p>Eliminates generic advice; all pest, irrigation, and crop advice applies strictly to that coordinate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: AI FARMER ASSISTANT -->
+    <section class="slide" data-slide="8" data-category="AI ASSISTANT">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">INTELLIGENT ADVISOR</div>
+          <h1 class="slide-title">Your AI Agricultural Assistant</h1>
+          <p class="slide-sub-lead">Answers the <strong>actual questions asked by the farmer</strong>, not generic demo text.</p>
+
+          <div class="chat-mockup">
+            <div class="chat-bubble user">
+              <span class="chat-sender">Farmer:</span>
+              “My tomato leaves have yellow halos and dark brown spots. Should I spray Mancozeb?”
+            </div>
+            <div class="chat-bubble ai">
+              <span class="chat-sender">AgriOne AI Assistant:</span>
+              “Symptoms indicate Early Blight (Alternaria solani). Mancozeb (2g/L water) is effective. However, rain is predicted in 18 hours. Spray immediately or apply after rain settles to avoid wash-off.”
+            </div>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="card-stack">
+            <div class="stack-item"><span>🌱</span> <strong>Crop Guidance:</strong> Sowing depth, spacing, crop variety suitability</div>
+            <div class="stack-item"><span>🔬</span> <strong>Disease Queries:</strong> Identification, safe chemical and organic cures</div>
+            <div class="stack-item"><span>💧</span> <strong>Irrigation Advice:</strong> Schedule by soil type and growth phase</div>
+            <div class="stack-item"><span>🧪</span> <strong>Soil Guidance:</strong> NPK deficiency remediation, pH correction</div>
+            <div class="stack-item"><span>📊</span> <strong>Market Insights:</strong> Best selling times and price forecasts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: AI VOICE INTERACTION -->
+    <section class="slide" data-slide="9" data-category="VOICE INTERACTION">
+      <div class="slide-content">
+        <div class="badge-accent">HANDS-FREE IN FIELD</div>
+        <h1 class="slide-title">Talk to AgriOne</h1>
+        <p class="slide-sub-lead">Designed for farmers in the field who need instant advice while working with mud on their hands.</p>
+
+        <div class="flow-badge-strip">
+          Voice Input ➔ AI Understanding ➔ Processing ➔ Voice Response
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🎙️</div>
+            <h3>Voice Input</h3>
+            <p>Farmer speaks questions naturally in regional dialects. Noise-reduction filters out tractor and wind sounds.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">⚙️</div>
+            <h3>AI Understanding</h3>
+            <p>Speech-to-text with agricultural domain vocabulary matches technical terms and phonetic translations.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🔊</div>
+            <h3>Voice Response</h3>
+            <p>Synthesizes human-like regional audio advice. Speaks back clearly so farmers never have to read small text.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: MULTILINGUAL PLATFORM -->
+    <section class="slide" data-slide="10" data-category="ACCESSIBILITY">
+      <div class="slide-content">
+        <div class="badge-accent">DIGITAL INCLUSION</div>
+        <h1 class="slide-title">Agriculture Without Language Barriers</h1>
+        <div class="tagline-banner">
+          “One Platform. Multiple Languages. Better Accessibility.”
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🌐</div>
+            <h3>Synchronized UI</h3>
+            <p>Navigation tabs, dashboard charts, buttons, and alert notices switch dynamically to selected regional tongue.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">💬</div>
+            <h3>Native Language AI</h3>
+            <p>AI Assistant reads and answers in the selected dialect, using colloquial farming terms farmers understand.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🗣️</div>
+            <h3>Regional Voice Engine</h3>
+            <p>Voice-in and Voice-out support ensures that low-literacy farmers enjoy 100% equal access to AI intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: AI CROP HEALTH & DISEASE DETECTION -->
+    <section class="slide" data-slide="11" data-category="CROP HEALTH">
+      <div class="slide-content">
+        <div class="badge-accent">COMPUTER VISION</div>
+        <h1 class="slide-title">AI Crop Health Scanner</h1>
+        <p class="slide-sub-lead">Farmer uploads an actual camera photo for laboratory-grade visual diagnosis.</p>
+
+        <div class="cv-flow-row">
+          <div class="cv-step">
+            <div class="cv-num">1</div>
+            <h4>Upload Crop Image</h4>
+            <p>Farmer snaps actual leaf photo</p>
+          </div>
+          <div class="cv-step">
+            <div class="cv-num">2</div>
+            <h4>AI Image Analysis</h4>
+            <p>Deep neural vision model</p>
+          </div>
+          <div class="cv-step">
+            <div class="cv-num">3</div>
+            <h4>Disease Identification</h4>
+            <p>Fungal/bacterial pathogen isolated</p>
+          </div>
+          <div class="cv-step">
+            <div class="cv-num">4</div>
+            <h4>Health Assessment</h4>
+            <p>Infection severity percentage</p>
+          </div>
+          <div class="cv-step">
+            <div class="cv-num">5</div>
+            <h4>Possible Cause</h4>
+            <p>Excess humidity or soil spores</p>
+          </div>
+          <div class="cv-step highlight">
+            <div class="cv-num">6</div>
+            <h4>Recommended Action</h4>
+            <p>Organic cure + exact chemical dose</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12: SMART IRRIGATION -->
+    <section class="slide" data-slide="12" data-category="IRRIGATION">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">WATER MANAGEMENT</div>
+          <h1 class="slide-title">Intelligent Water Management</h1>
+          <p class="slide-sub-lead">Eliminating groundwater waste while maximizing crop hydration and root health.</p>
+
+          <div class="flow-badge-strip">
+            Crop + Soil + Weather + Moisture ➔ AI / Rule Engine ➔ Irrigation Recommendation
+          </div>
+
+          <div class="card-feature">
+            <div class="feat-icon">💧</div>
+            <h3>Calculated Water Economics</h3>
+            <p>Cross-calculates crop stage evapotranspiration, soil moisture index, and incoming rainfall radar. Prevents unnecessary pumping and saves electricity.</p>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="card-stack">
+            <div class="stack-item"><span>⏱️</span> <strong>Smart Scheduling:</strong> Recommends early morning (05:00-08:00 AM) to minimize evaporation.</div>
+            <div class="stack-item"><span>🌧️</span> <strong>Weather-Aware Pausing:</strong> Delays irrigation if >10mm rain is forecast within 24 hours.</div>
+            <div class="stack-item"><span>🌱</span> <strong>Crop-Stage Sensitive:</strong> High water at flowering; reduced water at maturation.</div>
+            <div class="stack-item"><span>📊</span> <strong>Resource Savings:</strong> Up to 40% reduction in agricultural water and pump power usage.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 13: WEATHER & CROP INTELLIGENCE -->
+    <section class="slide" data-slide="13" data-category="WEATHER INTELLIGENCE">
+      <div class="slide-content">
+        <div class="badge-accent">CLIMATE ADVISORY</div>
+        <h1 class="slide-title">From Weather Data to Farming Decisions</h1>
+        <p class="slide-sub-lead">Raw numbers translated into immediate farmer directives.</p>
+
+        <div class="flow-badge-strip">
+          Weather Data ➔ AI Interpretation ➔ Farmer Action
+        </div>
+
+        <div class="grid-4-col">
+          <div class="card-metric">
+            <div class="metric-top">🌡️ Temperature</div>
+            <h4>33°C Heat Alert</h4>
+            <p>Advises light evening sprinkler misting to protect delicate blossom drop.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">🌧️ Precipitation</div>
+            <h4>85% Rain in 18h</h4>
+            <p>Instructs farmer to postpone all nitrogen fertilizer application immediately.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">💧 Humidity</div>
+            <h4>92% High Dewpoint</h4>
+            <p>Triggers preventative bio-fungicide warning for downy mildew outbreak.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">💨 Wind Velocity</div>
+            <h4>24 km/h Gusts</h4>
+            <p>Cancels pesticide spray operations to prevent hazardous chemical drift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 14: SOIL HEALTH -->
+    <section class="slide" data-slide="14" data-category="SOIL INTELLIGENCE">
+      <div class="slide-content">
+        <div class="badge-accent">SOIL MANAGEMENT</div>
+        <h1 class="slide-title">Understand Your Soil</h1>
+        <p class="slide-sub-lead">Protecting long-term soil microbiome while optimizing immediate seasonal nutrition.</p>
+
+        <div class="flow-badge-strip">
+          Soil Data ➔ Analysis ➔ Crop Suitability ➔ Recommendation
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🧪</div>
+            <h3>Soil Physical Profile</h3>
+            <p>Evaluates soil texture (Black cotton, Sandy loam, Red clay), water holding capacity, and percolation rates.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">⚖️</div>
+            <h3>Chemical & Nutrient Index</h3>
+            <p>Tracks pH balance, Electrical Conductivity, and Primary (NPK) plus Micronutrients (Zinc, Boron, Sulfur).</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🌿</div>
+            <h3>Actionable Soil Plan</h3>
+            <p>Generates tailored organic compost and fertilizer dosages per acre to restore degraded plots.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 15: CROP RECOMMENDATION -->
+    <section class="slide" data-slide="15" data-category="CROP SELECTION">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">DECISION SUPPORT</div>
+          <h1 class="slide-title">What Should I Grow?</h1>
+          <p class="slide-sub-lead">Scientific matching of agro-climatic conditions with economic profitability.</p>
+
+          <div class="card-stack">
+            <div class="stack-item"><span>📍</span> <strong>Location & Season:</strong> Evaluates Kharif/Rabi cycles and rainfall patterns.</div>
+            <div class="stack-item"><span>🧪</span> <strong>Soil & Water Capacity:</strong> Recommends drought-resistant crops for drylands.</div>
+            <div class="stack-item"><span>📈</span> <strong>Market Projections:</strong> Prioritizes varieties with high expected demand.</div>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="rec-output-box">
+            <div class="rec-badge">SAMPLE RECOMMENDATION OUTPUT</div>
+            <h2 class="rec-crop-name">Chickpea (Bengal Gram / Chana)</h2>
+            <div class="rec-reason"><strong>Agronomic Reason:</strong> Matches current soil residual moisture after soybean harvest. High market demand projected at regional mandis.</div>
+            <div class="rec-conditions">
+              <div>• Sowing Window: Oct 15 – Nov 10</div>
+              <div>• Soil pH: 6.8 – 7.5 (Optimal)</div>
+              <div>• Water Requirement: 2 light irrigations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 16: MANDI & MARKET INTELLIGENCE -->
+    <section class="slide" data-slide="16" data-category="MARKET INTELLIGENCE">
+      <div class="slide-content">
+        <div class="badge-accent">MARKET PRICES</div>
+        <h1 class="slide-title">Know the Market Before You Sell</h1>
+        <p class="slide-sub-lead">Real-time APMC price benchmarks empowering farmers against middleman price suppression.</p>
+
+        <div class="flow-badge-strip">
+          Crop ➔ Market Data ➔ Price Intelligence ➔ Better Decision
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">📊</div>
+            <h3>Live Mandi Comparison</h3>
+            <p>Compares prices across 5 nearby APMC wholesale markets with distance-adjusted transport costs.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">📈</div>
+            <h3>Price Trend Velocity</h3>
+            <p>Analyzes 30-day historical trajectories to identify upward surges or imminent arrival gluts.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">💰</div>
+            <h3>Optimal Selling Window</h3>
+            <p>AI suggests whether to sell immediately or utilize warehouse storage for maximum return.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 17: FARM MANAGEMENT -->
+    <section class="slide" data-slide="17" data-category="FARM MANAGEMENT">
+      <div class="slide-content">
+        <div class="badge-accent">DIGITAL OPERATIONS</div>
+        <h1 class="slide-title">Digital Farm Management</h1>
+        <p class="slide-sub-lead">Transforming messy paper logs into a structured digital agricultural management system.</p>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">📑</div>
+            <h3>Farm & Crop Profiles</h3>
+            <p>Maintains boundaries, crop varieties, sowing dates, and expected harvest targets across all plots.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🗓️</div>
+            <h3>Lifecycle Tracking</h3>
+            <p>Tracks physiological growth stages from seed emergence to flowering, pod development, and maturity.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🔔</div>
+            <h3>Automated Reminders</h3>
+            <p>Sends advance notices for scheduled fertigation, weeding cycles, and harvesting preparation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 18: DAILY FIELD ACTIVITY -->
+    <section class="slide" data-slide="18" data-category="FIELD EXECUTION">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">DAILY CHECKLIST</div>
+          <h1 class="slide-title">Daily Field Activity Checklist</h1>
+          <p class="slide-sub-lead">An interactive checklist that keeps farm labor and operations on schedule.</p>
+
+          <div class="checklist-box">
+            <div class="chk-item done">
+              <span class="chk-icon">☑</span>
+              <span class="chk-text">06:00 AM – Zone A Drip line flushing & irrigation (Done)</span>
+            </div>
+            <div class="chk-item done">
+              <span class="chk-icon">☑</span>
+              <span class="chk-text">07:30 AM – Scouting for whitefly and aphids in Block 2 (Done)</span>
+            </div>
+            <div class="chk-item in-progress">
+              <span class="chk-icon">⏳</span>
+              <span class="chk-text">10:00 AM – Foliar zinc & micronutrient spray application</span>
+            </div>
+            <div class="chk-item pending">
+              <span class="chk-icon">☐</span>
+              <span class="chk-text">03:30 PM – Soil sensor moisture telemetry verification</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="card-stack">
+            <div class="stack-item"><span>👥</span> <strong>Worker Task Delegation:</strong> Assign specific field tasks to farm hands.</div>
+            <div class="stack-item"><span>📍</span> <strong>Geo-Verification:</strong> Confirms spray tasks occurred at the correct plot.</div>
+            <div class="stack-item"><span>📈</span> <strong>Daily Completion %:</strong> Live progress tracking of seasonal milestones.</div>
+            <div class="stack-item"><span>🏆</span> <strong>Audit Readiness:</strong> Creates verifiable logs required for organic certification.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 19: EQUIPMENT & MACHINERY -->
+    <section class="slide" data-slide="19" data-category="ASSET MANAGEMENT">
+      <div class="slide-content">
+        <div class="badge-accent">EQUIPMENT & ASSETS</div>
+        <h1 class="slide-title">Equipment & Machinery Management</h1>
+        <p class="slide-sub-lead">Preventing expensive mid-season mechanical breakdowns during critical harvest periods.</p>
+
+        <div class="flow-badge-strip">
+          Equipment ➔ Usage ➔ Maintenance ➔ Alerts
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🚜</div>
+            <h3>Machinery Registry</h3>
+            <p>Digital registry for tractors, boom sprayers, rotavators, water pumps, and micro-drip filtration units.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">⏱️</div>
+            <h3>Usage & Telematics</h3>
+            <p>Logs operational engine hours, diesel consumption rates, and attachment service life.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🔧</div>
+            <h3>Proactive Maintenance</h3>
+            <p>Predictive service alerts for oil changes, filter cleans, and hydraulic checks before peak field seasons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 20: FARM-TO-MARKET SUPPLY CHAIN -->
+    <section class="slide" data-slide="20" data-category="SUPPLY CHAIN">
+      <div class="slide-content">
+        <div class="badge-accent">TRANSPARENT DISTRIBUTION</div>
+        <h1 class="slide-title">Connecting Farmers to Markets</h1>
+        <p class="slide-sub-lead">Eliminating intermediaries to ensure maximum profits return to the farmer.</p>
+
+        <div class="flow-badge-strip">
+          Farmer ➔ Crop Production ➔ Quality ➔ Market ➔ Buyer ➔ Sale
+        </div>
+
+        <div class="grid-4-col">
+          <div class="card-feature">
+            <div class="feat-icon">🌾</div>
+            <h3>Production Harvest</h3>
+            <p>Digitizes harvest yield estimates, batch numbers, and field origin records.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🏷️</div>
+            <h3>Quality Standardization</h3>
+            <p>Assesses moisture percentage and grading for fair price realization.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🤝</div>
+            <h3>Direct Buyer Matching</h3>
+            <p>Connects agricultural cooperatives with food processors and retail networks.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🚚</div>
+            <h3>Connected Logistics</h3>
+            <p>Coordinated cold transport with live delivery tracking and digital escrow pay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 21: AGRICULTURAL MARKETPLACE -->
+    <section class="slide" data-slide="21" data-category="COMMERCE">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">UNIFIED TRADE</div>
+          <h1 class="slide-title">Digital Agricultural Marketplace</h1>
+          <p class="slide-sub-lead">A trusted dual-sided digital commerce hub for farm produce and agricultural inputs.</p>
+
+          <div class="card-pillar emerald">
+            <h3>Sell Side: Farm Produce</h3>
+            <ul class="clean-list">
+              <li>Direct listings of harvested grains, pulses, fruits & vegetables</li>
+              <li>Fair price discovery without predatory commission agents</li>
+              <li>Access to bulk institutional food buyers and export aggregators</li>
+              <li>Secure escrow payments released upon quality acceptance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="card-pillar cyan">
+            <h3>Buy Side: Inputs & Services</h3>
+            <ul class="clean-list">
+              <li>Certified authentic seeds, bio-fertilizers & organic pesticides</li>
+              <li>Machinery rental: Pay-per-hour tractor & drone spraying</li>
+              <li>Professional soil testing lab booking with doorstep sampling</li>
+              <li>Transparent community reviews and ratings of suppliers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 22: LIVESTOCK & DAIRY -->
+    <section class="slide" data-slide="22" data-category="ANIMAL HUSBANDRY">
+      <div class="slide-content">
+        <div class="badge-accent">INTEGRATED FARMING</div>
+        <h1 class="slide-title">Beyond Crop Farming: Livestock & Dairy</h1>
+        <p class="slide-sub-lead">Supporting mixed farming households with dedicated animal health and dairy records.</p>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🐄</div>
+            <h3>Cattle Profiles & Tagging</h3>
+            <p>Individual records for dairy cows, buffaloes, and goats: breed, age, tag number, and lactation history.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🌾</div>
+            <h3>Feed & Nutrition Plans</h3>
+            <p>Balanced green fodder, silage, and mineral mixture rationing to sustain high milk yields.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">💉</div>
+            <h3>Health & Productivity</h3>
+            <p>Deworming and vaccination schedule alerts, artificial insemination cycles, and daily milk recording.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 23: SATELLITE & DRONE INTELLIGENCE -->
+    <section class="slide" data-slide="23" data-category="REMOTE SENSING">
+      <div class="slide-content">
+        <div class="badge-accent">AERIAL MONITORING</div>
+        <h1 class="slide-title">Farm Intelligence From Above</h1>
+        <p class="slide-sub-lead">Combining high-altitude satellite orbits with ultra-resolution drone flights.</p>
+
+        <div class="flow-badge-strip">
+          Satellite/Drone Data ➔ AI Analysis ➔ Field Insights ➔ Farmer Action
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🛰️</div>
+            <h3>Satellite Vegetation Indices</h3>
+            <p>NDVI (Normalized Difference Vegetation Index) maps reveal hidden canopy stress across wide acreage.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛸</div>
+            <h3>High-Resolution Drone Scouting</h3>
+            <p>Sub-centimeter photography pinpoints weed patches, clogged drip emitters, and crop lodging.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🎯</div>
+            <h3>Targeted Ground Action</h3>
+            <p>Farmer inspects only problem coordinates instead of walking miles across fields under hot sun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 24: SUSTAINABLE FARMING -->
+    <section class="slide" data-slide="24" data-category="SUSTAINABILITY">
+      <div class="slide-content">
+        <div class="badge-accent">REGENERATIVE AGRICULTURE</div>
+        <h1 class="slide-title">Smarter Farming. Sustainable Future.</h1>
+        <p class="slide-sub-lead">Protecting vital soil carbon, groundwater tables, and ecological biodiversity.</p>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">💧</div>
+            <h3>Precision Water Conservation</h3>
+            <p>Stops continuous flooding; preserves declining aquifers through micro-irrigation schedules.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛡️</div>
+            <h3>Chemical Reduction</h3>
+            <p>Spot-treatment protocols prevent unnecessary pesticide spraying, eliminating toxic runoff into rivers.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🌱</div>
+            <h3>Soil Carbon Restoration</h3>
+            <p>Crop rotation and green manure advice revitalizes depleted organic matter for future generations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 25: FINANCE & INSURANCE -->
+    <section class="slide" data-slide="25" data-category="AGRI-FINANCE">
+      <div class="slide-content">
+        <div class="badge-accent">FINANCIAL SECURITY</div>
+        <h1 class="slide-title">Agricultural Financial Intelligence</h1>
+        <p class="slide-sub-lead">De-risking family farms through institutional credit eligibility and insurance readiness.</p>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">💳</div>
+            <h3>Digital Farm Credit Readiness</h3>
+            <p>Verified digital farm records serve as proof of farm productivity for low-interest bank crop loans.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛡️</div>
+            <h3>Crop Insurance Support</h3>
+            <p>Simplifies claims by providing geo-tagged weather records and satellite crop damage evidence.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">📊</div>
+            <h3>Profitability & Margin Planner</h3>
+            <p>Calculates exact input expenditure vs expected yield revenues to safeguard family finances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 26: ANALYTICS & INSIGHTS -->
+    <section class="slide" data-slide="26" data-category="ANALYTICS">
+      <div class="slide-content">
+        <div class="badge-accent">BUSINESS INTELLIGENCE</div>
+        <h1 class="slide-title">Data Into Decisions</h1>
+        <p class="slide-sub-lead">Converting farm operations and environmental telemetry into visual performance metrics.</p>
+
+        <div class="grid-4-col">
+          <div class="card-metric">
+            <div class="metric-top">📈 Yield Trends</div>
+            <h4>+18% Projected Output</h4>
+            <p>Compared to previous season via precision fertigation adherence.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">💧 Water Efficiency</div>
+            <h4>32% Water Saved</h4>
+            <p>Calculated through evapotranspiration-based drip timing.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">💰 Input Cost Reduction</div>
+            <h4>-24% Fertilizer Costs</h4>
+            <p>Eliminated unnecessary chemical over-dosage through soil testing.</p>
+          </div>
+          <div class="card-metric">
+            <div class="metric-top">🏆 Quality Benchmark</div>
+            <h4>Grade-A Produce</h4>
+            <p>Attracted premium prices at local wholesale agricultural mandi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 27: ALERTS & NOTIFICATIONS -->
+    <section class="slide" data-slide="27" data-category="EARLY WARNING">
+      <div class="slide-content">
+        <div class="badge-accent">PROACTIVE PROTECTION</div>
+        <h1 class="slide-title">Proactive Agricultural Alerts</h1>
+        <p class="slide-sub-lead">Timely warnings that save crops before disasters strike.</p>
+
+        <div class="flow-badge-strip">
+          Detect ➔ Analyze ➔ Alert ➔ Act
+        </div>
+
+        <div class="grid-4-col">
+          <div class="card-feature">
+            <div class="feat-icon">🔍</div>
+            <h3>1. Detect</h3>
+            <p>Continuous sensor, satellite, weather radar, and mandi price stream monitoring.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🧠</div>
+            <h3>2. Analyze</h3>
+            <p>Evaluates specific threats against farmer's crop variety, growth stage, and soil.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">📲</div>
+            <h3>3. Alert</h3>
+            <p>Dispatches high-priority push notifications, audio calls, and regional SMS alerts.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">⚡</div>
+            <h3>4. Act</h3>
+            <p>Gives clear, non-technical instructions with exact steps and equipment needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 28: COMPLETE USER WORKFLOW -->
+    <section class="slide" data-slide="28" data-category="USER WORKFLOW">
+      <div class="slide-content">
+        <div class="badge-accent">SYSTEM WORKFLOW</div>
+        <h1 class="slide-title">How AgriOne Works – Complete User Workflow</h1>
+        <p class="slide-sub-lead">An unbroken, seamless journey connecting the farmer to practical results.</p>
+
+        <div class="full-workflow-container">
+          <div class="wf-node">1. Farmer Login</div>
+          <div class="wf-node">2. Language Selection</div>
+          <div class="wf-node">3. Farm Location</div>
+          <div class="wf-node">4. Farm Profile</div>
+          <div class="wf-node">5. Dashboard View</div>
+          <div class="wf-node">6. Multi-Source Data</div>
+          <div class="wf-node highlight">7. AI Processing</div>
+          <div class="wf-node highlight">8. Rule Engine Validation</div>
+          <div class="wf-node">9. Actionable Advice</div>
+          <div class="wf-node">10. Farmer Action</div>
+          <div class="wf-node">11. Updated Farm Data</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 29: TECHNOLOGY ARCHITECTURE -->
+    <section class="slide" data-slide="29" data-category="TECH ARCHITECTURE">
+      <div class="slide-content">
+        <div class="badge-accent">SYSTEM ARCHITECTURE</div>
+        <h1 class="slide-title">AgriOne Technology Stack</h1>
+        <p class="slide-sub-lead">A scalable, modular, multi-tiered enterprise-grade architecture.</p>
+
+        <div class="arch-stack">
+          <div class="arch-layer cyan">
+            <div class="layer-title">Layer 1: Frontend Layer</div>
+            <div class="layer-desc">Responsive Web App • Multilingual UI • Voice I/O Engine • Telemetry Dashboard</div>
+          </div>
+          <div class="arch-layer white">
+            <div class="layer-title">Layer 2: Backend Services</div>
+            <div class="layer-desc">Python Architecture • FastAPI / REST APIs • JWT Authentication • Asynchronous Task Queues</div>
+          </div>
+          <div class="arch-layer green">
+            <div class="layer-title">Layer 3: AI Intelligence Layer</div>
+            <div class="layer-desc">Vision Models for Disease Detection • LLM Agronomy Assistant • Multilingual ASR & TTS</div>
+          </div>
+          <div class="arch-layer lime">
+            <div class="layer-title">Layer 4: Agronomic Rule Engine</div>
+            <div class="layer-desc">Scientific Agronomy Equations • Water Balance Thresholds • Chemical Safety Guardrails</div>
+          </div>
+          <div class="arch-layer white">
+            <div class="layer-title">Layer 5: Unified Data Layer</div>
+            <div class="layer-desc">Farmer & Soil Datastores • Crop Telemetry • GIS Boundaries • Mandi Historical Time-Series</div>
+          </div>
+          <div class="arch-layer cyan">
+            <div class="layer-title">Layer 6: External Services</div>
+            <div class="layer-desc">Meteorological Weather APIs • Satellite NDVI Feeds • APMC Mandi Feeds • Geo Maps</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 30: AI + RULE ENGINE -->
+    <section class="slide" data-slide="30" data-category="CORE DIFFERENTIATOR">
+      <div class="slide-content">
+        <div class="badge-accent">ARCHITECTURAL RIGOR</div>
+        <h1 class="slide-title">Why AgriOne Is More Than a Chatbot</h1>
+        <p class="slide-sub-lead">The essential difference between open-ended conversational models and verified agricultural science.</p>
+
+        <div class="flow-badge-strip">
+          Farmer Input ➔ AI Interpretation ➔ Agricultural Rule Engine ➔ Data Validation ➔ Recommendation ➔ Farmer Action
+        </div>
+
+        <div class="grid-2-col">
+          <div class="card-pillar cyan">
+            <h3>AI Layer: Understanding & Vision</h3>
+            <ul class="clean-list">
+              <li>Understands conversational queries across diverse regional dialects</li>
+              <li>Scans crop leaf disease images and extracts pattern traits</li>
+              <li>Recognizes intent, farm parameters, and emotional urgency</li>
+              <li><em>Risk if used alone:</em> LLMs may hallucinate chemical dosages or ignore local pesticide laws.</li>
+            </ul>
+          </div>
+          <div class="card-pillar emerald">
+            <h3>Rule Engine: Rigorous Agronomy</h3>
+            <ul class="clean-list">
+              <li>Enforces strict mathematical calculations for fertilizer N-P-K</li>
+              <li>Cross-validates toxic chemical dosage limits with regulatory guidelines</li>
+              <li>Checks irrigation thresholds against moisture balance equations</li>
+              <li><strong>Result:</strong> 100% scientifically sound, verified, and safe advice for real farmers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 31: KEY DIFFERENTIATORS -->
+    <section class="slide" data-slide="31" data-category="COMPETITIVE ADVANTAGE">
+      <div class="slide-content">
+        <div class="badge-accent">OUR EDGE</div>
+        <h1 class="slide-title">Why AgriOne?</h1>
+        <div class="tagline-banner">
+          “AgriOne converts fragmented agricultural data into practical farming decisions.”
+        </div>
+
+        <div class="grid-3-col">
+          <div class="card-feature">
+            <div class="feat-icon">🌐</div>
+            <h3>Unified Ecosystem</h3>
+            <p>Replaces 10 fragmented apps with 1 integrated command hub covering the entire lifecycle.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛡️</div>
+            <h3>Dual AI + Rule Validation</h3>
+            <p>Natural conversation grounded by strict mathematical agronomy equations for 100% safety.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🎙️</div>
+            <h3>Voice-First & Multilingual</h3>
+            <p>Eliminates digital literacy barriers so every farmer can speak and listen in their mother tongue.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">📷</div>
+            <h3>Live Image Diagnostics</h3>
+            <p>Real-time leaf scanner diagnoses fungal, bacterial, and pest attacks in seconds from photos.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">⛅</div>
+            <h3>Action-Driven Weather</h3>
+            <p>Converts raw millimetres and wind speed into specific spray/irrigation go/no-go directives.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">📍</div>
+            <h3>Hyper-Local Precision</h3>
+            <p>Personalized to the exact GPS coordinates and soil series of the farmer's specific field.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 32: BENEFITS & IMPACT -->
+    <section class="slide" data-slide="32" data-category="IMPACT">
+      <div class="slide-content split-layout">
+        <div class="col-text">
+          <div class="badge-accent">MEASURABLE VALUE</div>
+          <h1 class="slide-title">Impact of AgriOne</h1>
+          <p class="slide-sub-lead">Delivering measurable value across individual livelihoods and national agriculture.</p>
+
+          <div class="card-pillar emerald">
+            <h3>For Farmers</h3>
+            <ul class="clean-list">
+              <li><strong>Better Decisions:</strong> Data-backed crop selection and timely fertilization</li>
+              <li><strong>Reduced Uncertainty:</strong> Eliminates guesswork about weather and disease risks</li>
+              <li><strong>Cost Reductions:</strong> Halts fertilizer wastage and avoids unnecessary water pumping</li>
+              <li><strong>Higher Realization:</strong> Direct market intelligence eliminates middleman cuts</li>
+              <li><strong>Universal Access:</strong> Regional voice engine bridges rural digital divides</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-visual">
+          <div class="card-pillar cyan">
+            <h3>For Agriculture & Ecosystem</h3>
+            <ul class="clean-list">
+              <li><strong>Resource Conservation:</strong> Conserves 30-40% of agricultural groundwater</li>
+              <li><strong>Soil Health Protection:</strong> Halts chemical overuse and preserves soil microbiota</li>
+              <li><strong>Data-Driven Agronomy:</strong> Enhances national agricultural digitization</li>
+              <li><strong>Food Security:</strong> Mitigates post-harvest waste and protects staple harvests</li>
+              <li><strong>Climate Resilience:</strong> Equips farming communities to adapt to weather extremes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 33: TRADITIONAL FARMING VS AGRIONE -->
+    <section class="slide" data-slide="33" data-category="COMPARISON">
+      <div class="slide-content">
+        <div class="badge-accent">PARADIGM SHIFT</div>
+        <h1 class="slide-title">Traditional Farming vs AgriOne</h1>
+        <p class="slide-sub-lead">A fundamental shift from reactive intuition to predictive, data-driven precision.</p>
+
+        <div class="grid-2-col">
+          <div class="card-pillar red">
+            <h3>Traditional Farming (The Past)</h3>
+            <ul class="clean-list">
+              <li>❌ <strong>Fragmented Information:</strong> Scattered across television, rumors, and guesswork</li>
+              <li>❌ <strong>Manual Record Keeping:</strong> Lost paper notes, missed spray cycles, no audit logs</li>
+              <li>❌ <strong>Delayed Decisions:</strong> Pests identified only after irreversible leaf damage occurs</li>
+              <li>❌ <strong>Opaque Market Prices:</strong> Forced to sell at lowest rates offered by local agents</li>
+              <li>❌ <strong>Language Barriers:</strong> Scientific agriculture trapped in English journals</li>
+              <li>❌ <strong>Reactive Mindset:</strong> Farmers always scrambling to recover from disasters</li>
+            </ul>
+          </div>
+          <div class="card-pillar emerald">
+            <h3>AgriOne Platform (The Future)</h3>
+            <ul class="clean-list">
+              <li>✅ <strong>Unified Intelligence:</strong> Weather, soil, crops, and market data in one dashboard</li>
+              <li>✅ <strong>Digital Farm Ledger:</strong> Automated tasks, equipment tracking, and activity checklists</li>
+              <li>✅ <strong>Instant AI Diagnostics:</strong> Smartphone photo identifies pathogens within seconds</li>
+              <li>✅ <strong>Live Mandi Comparisons:</strong> Real-time APMC price benchmarks for highest returns</li>
+              <li>✅ <strong>Multilingual & Voice:</strong> Speaks to farmers naturally in their native mother tongue</li>
+              <li>✅ <strong>Proactive Mindset:</strong> Early warning systems prevent crop damage before it occurs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 34: FUTURE SCOPE -->
+    <section class="slide" data-slide="34" data-category="FUTURE ROADMAP">
+      <div class="slide-content">
+        <div class="badge-accent cyan">FUTURE ROADMAP</div>
+        <h1 class="slide-title">Future of AgriOne</h1>
+        <div class="future-notice-tag">PLANNED EXTENSIONS & RESEARCH DIRECTIONS (FUTURE SCOPE)</div>
+
+        <div class="grid-4-col">
+          <div class="card-feature">
+            <div class="feat-icon">📡</div>
+            <h3>IoT & Field Sensors</h3>
+            <p>Real-time soil probes measuring NPK, moisture & pH transmitted via LoRaWAN & NB-IoT networks.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🛸</div>
+            <h3>Autonomous Drone Sprays</h3>
+            <p>Automated drone fleets performing spot-spraying based directly on AI leaf disease coordinate maps.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🔮</div>
+            <h3>Predictive Yield ML</h3>
+            <p>Multi-spectral satellite models predicting exact quintal harvest yield per hectare weeks in advance.</p>
+          </div>
+          <div class="card-feature">
+            <div class="feat-icon">🏛️</div>
+            <h3>Government Scheme APIs</h3>
+            <p>Direct linking with Kisan Credit Card subsidies, soil health card databases, and PMFBY insurance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 35: CONCLUSION -->
+    <section class="slide" data-slide="35" data-category="CONCLUSION">
+      <div class="slide-content conclusion-layout">
+        <div class="badge-accent">CONCLUSION & VISION</div>
+        <h1 class="concl-brand">AgriOne</h1>
+        <h2 class="concl-tagline">One Platform. Multiple Agricultural Intelligence Systems. One Smarter Farming Ecosystem.</h2>
+        
+        <div class="concl-quote-card">
+          “AgriOne aims to empower farmers with accessible, intelligent, and actionable agricultural technology — transforming data into better decisions and better decisions into a smarter agricultural future.”
+        </div>
+
+        <div class="concl-bullets">
+          <div class="cb-item">✓ Democratizes cutting-edge AI for rural communities</div>
+          <div class="cb-item">✓ Marries conversational AI with strict agronomic safety</div>
+          <div class="cb-item">✓ Creates resilient, sustainable, and highly profitable farms</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 36: THANK YOU -->
+    <section class="slide" data-slide="36" data-category="THANK YOU">
+      <div class="slide-content s36-layout">
+        <div class="s36-left">
+          <h1 class="ty-title">THANK YOU</h1>
+          <h2 class="ty-brand">AgriOne</h2>
+          <p class="ty-sub">“AI-Powered Intelligence for Smarter Farming.”</p>
+          
+          <div class="team-credits-box">
+            <div class="tc-title">TEAM: SILENT CODERS</div>
+            <div class="tc-lead">★ Iyaan Nagari <span class="tc-role">(Team Leader)</span></div>
+            <div class="tc-members">
+              <div>• Bhuvan Kadakabhavi</div>
+              <div>• Jafar Momin</div>
+              <div>• Aiman Nadaf</div>
+            </div>
+          </div>
+
+          <div class="qa-invite">
+            💬 Questions & Discussion Welcomed!
+          </div>
+        </div>
+
+        <div class="s36-right">
+          <div class="logo-frame large">
+            <img src="assets/silent_coders_logo.jpg" alt="Silent Coders Logo" class="team-logo-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom Navigation Dock -->
+  <nav class="hud-dock">
+    <button class="nav-btn" id="btnPrev" title="Previous Slide (← / Up / PgUp)">
+      ◀ <span>Prev</span>
+    </button>
+    
+    <div class="slide-picker-wrap">
+      <select id="slideSelect" class="slide-select" title="Jump to specific slide">
+        <!-- Will be populated dynamically by JS -->
+      </select>
+    </div>
+
+    <button class="nav-btn" id="btnNext" title="Next Slide (→ / Down / Space / PgDn)">
+      <span>Next</span> ▶
+    </button>
+  </nav>
+
+  <!-- Slide Drawer / Overview Modal -->
+  <div class="drawer-modal" id="drawerModal">
+    <div class="drawer-header">
+      <h2>All 36 Presentation Slides</h2>
+      <button class="btn-close" id="btnCloseDrawer">✕</button>
+    </div>
+    <div class="drawer-grid" id="drawerGrid">
+      <!-- Injected by app.js -->
+    </div>
+  </div>
+
+  <!-- Speaker Notes Modal -->
+  <div class="notes-modal" id="notesModal">
+    <div class="notes-header">
+      <h3 id="notesTitle">Speaker Notes – Slide 1</h3>
+      <button class="btn-close" id="btnCloseNotes">✕</button>
+    </div>
+    <div class="notes-body" id="notesBody">
+      <!-- Injected by app.js -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
